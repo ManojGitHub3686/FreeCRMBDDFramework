@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\deals.feature",
+@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\dealsmap.feature",
 				 glue={"StepDefinition"},
 				 plugin= {"pretty", "html:test-output", "json:json-output/cucumber.json", "junit:junit-ouput/cucumber.xml"},
 				 dryRun = false,
