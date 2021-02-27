@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.363258">
-<testcase classname="Free CRM application testing" name="Validate login with invalid credentials" time="0.363258">
-<system-out><![CDATA[Given user is on login page and having invalid login credentials............passed
-When User enters the invalid login credentials..............................passed
-Then User not able to login to application..................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.456654">
+<testcase classname="Test Tagged Hooks" name="This is First test" time="0.450883">
+<system-out><![CDATA[Given this is given stepone.................................................passed
+When this is when stepone...................................................passed
+Then this then stepone......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Second test" time="0.002093">
+<system-out><![CDATA[Given this is given steptwo.................................................passed
+When this is when steptwo...................................................passed
+Then this then steptwo......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Third test" time="0.003678">
+<system-out><![CDATA[Given this is given stepthree...............................................passed
+When this is when stepthree.................................................passed
+Then this then stepthree....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

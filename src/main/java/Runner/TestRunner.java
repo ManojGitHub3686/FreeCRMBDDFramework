@@ -6,13 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\tagging.feature",
+@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\taggedhooks.feature",
 				 glue={"StepDefinition"},
 				 plugin= {"pretty", "html:test-output", "json:json-output/cucumber.json", "junit:junit-ouput/cucumber.xml"},
 				 dryRun = false,
 				 monochrome = true,
 				 strict = true,
-				 tags = {"~@SmokeTest", "@RegressionTest"}
+				 tags = {"~@SmokeTest", "~@RegressionTest"}
 				)
 
 
@@ -22,7 +22,8 @@ import cucumber.api.junit.Cucumber;
 //format - To generate the different types of reporting
 //dryRun - To check the mapping is proper between feature file and step definition file
 //strict - To check that any step is not defined in the step definition file
-//tags - 
+//tags - To execute the Feature or Scenario based on tags
+
 public class TestRunner {
 
 }
