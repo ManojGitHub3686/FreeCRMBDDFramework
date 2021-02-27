@@ -6,12 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\dealsmap.feature",
+@CucumberOptions(features="C:\\Selenium_Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\tagging.feature",
 				 glue={"StepDefinition"},
 				 plugin= {"pretty", "html:test-output", "json:json-output/cucumber.json", "junit:junit-ouput/cucumber.xml"},
 				 dryRun = false,
 				 monochrome = true,
-				 strict = true
+				 strict = true,
+				 tags = {"~@SmokeTest", "@RegressionTest"}
 				)
 
 
@@ -25,3 +26,6 @@ import cucumber.api.junit.Cucumber;
 public class TestRunner {
 
 }
+
+//OR ed : tags = {"@SmokeTest, @RegressionTest"} --> Execute all tests tagged as @SmokeTest OR @RegressionTest
+//AND ed: tags = {"@SmokeTest", "@RegressionTest"} --> Execute all tests tagged as @SmokeTest AND @RegressionTest

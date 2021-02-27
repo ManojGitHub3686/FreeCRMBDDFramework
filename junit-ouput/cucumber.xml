@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.95799">
-<testcase classname="Deal data creation" name="Create deal using map" time="28.95799">
-<system-out><![CDATA[Given User is already on login page for deal map............................passed
-When Title of the page is Cogmento CRM for deal map.........................passed
-And User enters username in E-mail address textbox and password in Password textbox map.passed
-When User clicks on Deals link and clicks on New button map.................passed
-And Enter title and click Save button map...................................passed
-Then deal got saved successfully and verfiy title map.......................passed
-And Close the browser for deal map..........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.363258">
+<testcase classname="Free CRM application testing" name="Validate login with invalid credentials" time="0.363258">
+<system-out><![CDATA[Given user is on login page and having invalid login credentials............passed
+When User enters the invalid login credentials..............................passed
+Then User not able to login to application..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
